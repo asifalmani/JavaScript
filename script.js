@@ -59,7 +59,7 @@ console.log(typeof now);*/
 	Operator Precedence
 */
 
-var now = 2019;
+/*var now = 2019;
 var yearJohan = 1989;
 var fullAge = 18;
 
@@ -75,8 +75,8 @@ console.log(average);
 
 // Multiple Assignments
 var x, y;
-x = (3+5) * 4 - 6; /*8 *4 -6 // 32-6 //26*/
-x = y = (3+5) * 4 - 6; /*8 *4 -6 // 32-6 //26*/
+x = (3+5) * 4 - 6;
+x = y = (3+5) * 4 - 6; 
 console.log(x);
 console.log(x, y);
 
@@ -85,12 +85,25 @@ x *=2;
 console.log(x);
 x += 10;
 console.log(x);
-/*x = x + 1;
-x += 1;*/
 x++;
 console.log(x);
 x--;
-console.log(x);
+console.log(x);*/
 
 
 // https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/10788388#overview
+
+// Code Challange 2
+var johnMass = 68;
+var markMass = 83.4;
+var johnHeight = 1.78;
+var markHeight = 1.7;
+
+var johnBmi = johnMass / (johnHeight * johnHeight);
+console.log(johnBmi);
+
+var markBmi = markMass / (markHeight * markHeight);
+console.log(markBmi);
+
+var isMarkHealthy = johnBmi < markBmi;
+console.log('Mark is Healthier' ,isMarkHealthy);
