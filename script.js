@@ -170,7 +170,7 @@ console.log('Is Marks\'s BMI higher than Johan\'s?' + markHigherBMI);*/
 	* Boolean Logic
 */
 
-var firstName = 'Johan';
+/*var firstName = 'Johan';
 var age =20;
 
 if (age < 13) {
@@ -181,4 +181,53 @@ if (age < 13) {
 	console.log(firstName + 'is a young man');
 } else {
 	console.log(firstName + 'is a man.')
+}*/
+
+/****************************************
+	* The Ternary Operator and Switch Statements
+*/
+
+var firstName = 'John';
+var age = 16;
+
+// Ternary Operator
+/*age >= is ? console.log(firstName + 'dirnks bear.'): console.log(firstName + 'dirnks juice');
+
+var dirnk = age >= 18 ? 'bear' : 'juice';
+console.log(dirnk);*/
+
+/*if (age >= 18) {
+	var dirnk = 'bear';
+} else {
+	var drink = 'juice';
+}*/
+
+// Switch Statements
+var job = 'cop';
+switch (job) {
+	case 'teacher':
+		console.log(firstName + 'teachs kids how to code.');
+		break;
+	case 'driver':
+		console.log(firstName + 'drives an uber in Lahore.');
+		break;
+	case 'designer':
+		console.log(firstName + 'designs beautiful websites.');
+	default:
+		console.log(firstName + 'does something else.');
 }
+
+age = 22;
+switch (true) {
+	case age < 13:
+		console.log(firstName + 'is a boy.');
+		break;
+	case age >= 13 && age < 20:
+		console.log(firstName + 'is a teenager');
+		break;
+	case age >= 20 && age < 30:		
+		console.log(firstName + 'is a young man');
+		break;
+	default: 
+		console.log(firstName + 'is a man.');
+}		
