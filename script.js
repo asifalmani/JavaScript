@@ -94,7 +94,7 @@ console.log(x);*/
 // https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/10788388#overview
 
 // Code Challange 2
-var johnMass = 68;
+/*var johnMass = 68;
 var markMass = 83.4;
 var johnHeight = 1.78;
 var markHeight = 1.7;
@@ -106,4 +106,79 @@ var markBmi = markMass / (markHeight * markHeight);
 console.log(markBmi);
 
 var isMarkHealthy = johnBmi < markBmi;
-console.log('Mark is Healthier' ,isMarkHealthy);
+console.log('Mark is Healthier' ,isMarkHealthy);*/
+
+
+/*var massMark = 78;
+var heightMark = 1.69;
+
+var massJohn = 92;
+var heightJohn = 1.95;
+
+var BMIMark = massMark / (heightMark * heightMark);
+var BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+var markHigherBMI = BMIMark > BMIJohn;
+
+console.log('Is Marks\'s BMI higher than Johan\'s?' + markHigherBMI);
+*/
+
+
+/****************************************
+	* If / else statments
+*/
+
+/*var firstName = 'John'
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+	console.log(firstName + 'is married');
+} else {
+	console.log(firstName + 'will hopefully marry soon:)');
+}
+
+var isMarried = true;
+if (isMarried) {
+	console.log(firstName + 'is married');
+} else {
+	console.log(firstName + 'will hopefully marry soon:)');
+}
+
+
+var massMark = 78;
+var heightMark = 1.69;
+
+var massJohn = 192;
+var heightJohn = 1.95;
+
+var BMIMark = massMark / (heightMark * heightMark);
+var BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if  (BMIMark > BMIJohn) {
+	console.log('Mark\'s BMI is higher than Johan\'s.');
+} else {
+	console.log('Johan\'s BMI is higher than Mark\'s.');
+}*/
+
+
+/*var markHigherBMI = BMIMark > BMIJohn;
+console.log('Is Marks\'s BMI higher than Johan\'s?' + markHigherBMI);*/
+
+
+/****************************************
+	* Boolean Logic
+*/
+
+var firstName = 'Johan';
+var age =20;
+
+if (age < 13) {
+	console.log(firstName + 'is a boy.')
+} else if (age >= 13 && age < 20) {
+	console.log(firstName + 'is a teenager');
+} else if ( age >= 20 && age <30) {
+	console.log(firstName + 'is a young man');
+} else {
+	console.log(firstName + 'is a man.')
+}
