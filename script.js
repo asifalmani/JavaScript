@@ -299,7 +299,7 @@ yearUntilRetirement(1954, 'Adnan');*/
 // function whatDoYouDo(job, firstName){}
 
 // Functions Expression
-var whatDoYouDo = function (job, firstName) {
+/*var whatDoYouDo = function (job, firstName) {
 	switch(job) {
 		case 'teacher':
 			return firstName + ' teaches kids how to code';
@@ -314,4 +314,14 @@ var whatDoYouDo = function (job, firstName) {
 
 console.log(whatDoYouDo('teacher', 'Johan'));
 console.log(whatDoYouDo('driver', 'Adnan'));
-console.log(whatDoYouDo('designer', 'Asif'));
+console.log(whatDoYouDo('designer', 'Asif'));*/
+
+/****************************************
+	* Arrays
+*/
+
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+console.log(names.length);
