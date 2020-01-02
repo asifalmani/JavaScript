@@ -262,20 +262,19 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 	* Functions
 */
 
-function calculateAge(birthYear) {
+/*function calculateAge(birthYear) {
 	 return 2020 - birthYear;
 }
 
 var ageAsif = calculateAge(1983);
-var ageAdnan = calculateAge(1980);
 var ageFaisal = calculateAge(1984);
 console.log(ageAsif, ageFaisal, ageAdnan);
 
-/*function yearUntilRetirement(year, firstName) {
+function yearUntilRetirement(year, firstName) {
 	var age = calculateAge(year)
 	var retirement = 65 - age;
 	console.log(firstName + 'retires in ' + retirement + 'years.')
-}*/
+}
 
 function yearUntilRetirement(year, firstName) {
 	var age = calculateAge(year)
@@ -289,4 +288,30 @@ function yearUntilRetirement(year, firstName) {
 }
 yearUntilRetirement(1983, 'Asif');
 yearUntilRetirement(1984, 'Faisal');
-yearUntilRetirement(1954, 'Adnan');
+yearUntilRetirement(1954, 'Adnan');*/
+
+
+/****************************************
+	* Functions Statments and Expression
+*/
+
+// Functions Declaration
+// function whatDoYouDo(job, firstName){}
+
+// Functions Expression
+var whatDoYouDo = function (job, firstName) {
+	switch(job) {
+		case 'teacher':
+			return firstName + ' teaches kids how to code';
+		case 'driver':
+			return firstName + ' drives a cap in Lahore';
+		case 'designer':
+			return firstName + ' designs a beautiful websites';
+		default:
+			return firstName + ' does something else';
+	}
+}
+
+console.log(whatDoYouDo('teacher', 'Johan'));
+console.log(whatDoYouDo('driver', 'Adnan'));
+console.log(whatDoYouDo('designer', 'Asif'));
