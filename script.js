@@ -187,8 +187,8 @@ if (age < 13) {
 	* The Ternary Operator and Switch Statements
 */
 
-var firstName = 'John';
-var age = 16;
+/*var firstName = 'John';
+var age = 16;*/
 
 // Ternary Operator
 /*age >= is ? console.log(firstName + 'dirnks bear.'): console.log(firstName + 'dirnks juice');
@@ -203,7 +203,7 @@ console.log(dirnk);*/
 }*/
 
 // Switch Statements
-var job = 'cop';
+/*var job = 'cop';
 switch (job) {
 	case 'teacher':
 		console.log(firstName + 'teachs kids how to code.');
@@ -230,4 +230,30 @@ switch (true) {
 		break;
 	default: 
 		console.log(firstName + 'is a man.');
-}		
+}		*/
+
+// Code Challange 2
+
+var scoreJohn = (189 + 120 + 103) / 3;
+var scoreMike = (119 + 94 +123) / 3;
+var scoreMary = (97 + 134 + 105) / 3;
+console.log(scoreJohn, scoreMike,scoreMary);
+
+if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+	console.log('Johan\'s team wins with' + scoreJohn + 'points');
+} else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+	console.log('Mike\'s team wins with' + scoreMike + 'points');
+} else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+	console.log('Mary\'s team wins with' + scoreMary + 'points');
+} else {
+	console.log('There is draw');
+}
+
+/*if (scoreJohn > scoreMike) {
+	console.log('Johan\'s team wins with' + scoreJohn + 'points');
+} else if (scoreMike > scoreJohn) {
+	console.log('Mike\'s team wins with' + scoreMike + 'points');
+} else {
+	console.log('There is a draw');
+}
+*/
