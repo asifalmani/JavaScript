@@ -234,7 +234,7 @@ switch (true) {
 
 // Code Challange 2
 
-var scoreJohn = (189 + 120 + 103) / 3;
+/*var scoreJohn = (189 + 120 + 103) / 3;
 var scoreMike = (119 + 94 +123) / 3;
 var scoreMary = (97 + 134 + 105) / 3;
 console.log(scoreJohn, scoreMike,scoreMary);
@@ -248,7 +248,7 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 } else {
 	console.log('There is draw');
 }
-
+*/
 /*if (scoreJohn > scoreMike) {
 	console.log('Johan\'s team wins with' + scoreJohn + 'points');
 } else if (scoreMike > scoreJohn) {
@@ -256,4 +256,37 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 } else {
 	console.log('There is a draw');
 }
+
+
+/****************************************
+	* Functions
 */
+
+function calculateAge(birthYear) {
+	 return 2020 - birthYear;
+}
+
+var ageAsif = calculateAge(1983);
+var ageAdnan = calculateAge(1980);
+var ageFaisal = calculateAge(1984);
+console.log(ageAsif, ageFaisal, ageAdnan);
+
+/*function yearUntilRetirement(year, firstName) {
+	var age = calculateAge(year)
+	var retirement = 65 - age;
+	console.log(firstName + 'retires in ' + retirement + 'years.')
+}*/
+
+function yearUntilRetirement(year, firstName) {
+	var age = calculateAge(year)
+	var retirement = 65 - age;
+	if ( retirement > 0) {
+		console.log(firstName + 'retires in ' + retirement + 'years.')	
+	} else {
+		console.log(firstName + 'is already retired');
+	}
+	
+}
+yearUntilRetirement(1983, 'Asif');
+yearUntilRetirement(1984, 'Faisal');
+yearUntilRetirement(1954, 'Adnan');
